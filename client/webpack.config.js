@@ -45,6 +45,16 @@ module.exports = (env) => {
         },
         // copy static files to dist folder via a copy plugin
         plugins: [
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: 'src/index.html'
+                    },
+                    {
+                        from: 'src/styles.css'
+                    }
+                ]
+            }),
             new Dotenv({
                 path: configPath
             }),

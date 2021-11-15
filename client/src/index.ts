@@ -3,6 +3,12 @@ import { LoadingScene } from "./scenes/loading.scene";
 import { LoginScene } from "./scenes/login.scene";
 import { PlayScene } from "./scenes/play.scene";
 
+// Start the Phaser game when the window loads. The entry point of the game will become
+// the 'Loading Scene' which is specified in the Phaser configuration below
+window.onload = () => {
+    new BroswerMMOGame();
+};
+
 export class BroswerMMOGame {
     constructor() {
 
@@ -20,6 +26,8 @@ export class BroswerMMOGame {
                   debug: false,
                 },
             },
+            // The 'Loading Scene' will be the entry point of the game 
+            // because it is the only scene set to active by default in the 'LoadingScene' constructor
             scene: [LoadingScene, LoginScene, PlayScene]
         };
 
