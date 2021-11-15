@@ -5,13 +5,31 @@
         <title>BroswerMMO!</title>
         <!-- Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap" rel="stylesheet">  
+        
         <!--Add div with font styleing to load font before game starts-->
         <div style="font-family: 'Josefin Sans', sans-serif; position: absolute;";>BroswerMMO!</div>
+
+        <!--Boostrap CSS/JS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
         <!-- Load Phaser and game -->
         <script src="main.js"></script>
 
+        <!-- Internal Style Sheet-->
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
     </head>
     <body>
+
+    <!-- Login Panel-->
+    <div class="panel login centered" id="loginPanel">
+        <div class="login-content flex-container column">
+            <div class="title-font panel-content">BrowserMMO!</div>	
+            <input type="text" class="form-control panel-content" id="nameInput" placeholder="Enter a name">
+            <button type="button" id="playButton" class="btn btn-success panel-content">Play!</button>
+        </div>
+    </div>
+
     </body>
 </html>

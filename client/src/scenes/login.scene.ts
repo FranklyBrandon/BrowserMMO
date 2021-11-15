@@ -8,4 +8,8 @@ export class LoginScene extends Phaser.Scene {
 
         super(sceneConfig);
     }
+
+    create() {
+        console.log('Login Scene created');
+    }
 }
