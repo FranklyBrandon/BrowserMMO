@@ -24,7 +24,7 @@ export class WebSocketService {
             .build();
     }
 
-    public send(opcode: string, data: string) {
+    public send(opcode: string, data: string) { 
         /*
         let packet: Packet<string> =  {
             opcode,
@@ -44,6 +44,7 @@ export class WebSocketService {
     }
 
     public onOpen(name: string) {
+        console.log("A websocket connection has been established")
         /*
         this.send(OPCODES.NAME_ENTRY, name);
         */
