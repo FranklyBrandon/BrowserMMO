@@ -1,3 +1,5 @@
+import Phaser from 'phaser';
+
 export class PlayScene extends Phaser.Scene {
     constructor() {
         const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {

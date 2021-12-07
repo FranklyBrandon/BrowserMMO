@@ -15,7 +15,7 @@ export class WebSocketService {
     }
 
     public connect(name: string): void { 
-        this.websocket  = new WebsocketBuilder(ENTRY_URL)
+        this.websocket  = new WebsocketBuilder(ENTRY_URL!)
             .onOpen((i, ev) => this.onOpen(name))
             .onClose((i, ev) => { console.log("connection closed") })
             .onError((i, ev) => { console.log("connection error") })
